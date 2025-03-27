@@ -1,20 +1,126 @@
-*{
+* {
     padding: 0;
     margin: 0;
-     box-sizing: border-box;
-
+    box-sizing: border-box;
 }
-.main{
+
+.main {
     width: 100%;
     height: 100%;
     border: 2px solid black;
 }
 
-.home{
+.home {
     width: 100%;
     height: 99vh;
     border: 2px solid red;
 }
+
+.navbar-div {
+    width: 100%;
+    height: 110px;
+    border: 2px solid green;
+    display: flex;
+    align-items: center;
+    background: rgb(9, 22, 37);
+}
+
+.logo__div {
+    width: 20%;
+    height: 100px;
+    border: 2px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.context__div {
+    width: 80%;
+    height: 100px;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(176, 171, 192);
+    font-size: 20px;
+    font-weight: 700;
+
+}
+.swiper_slide img{
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Fade Animation */
+.fade {
+    animation: fadeEffect 3s infinite;
+}
+
+@keyframes fadeEffect {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .banner1{
     width: 100%;

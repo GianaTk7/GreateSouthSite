@@ -4,11 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./stylesheet.css">
-    <title>Document</title>
+    <title>GreateSouthSite</title>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
     <div class="main">
-        <div class="home">Gia</div>
+        <div class="home">
+            <nav>
+                <div class="navbar-div">
+                    <div class="logo__div">
+                        <img src="./images/logo.png" style="width: 160px; margin-left: 4px" alt="logo">
+                    </div>
+                    <div class="context__div">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    
+            <!-- Swiper -->
+            <div class="slideshow-container">
+                <div class="slide fade"><img src="images/work.jpg" alt="Slide 1"></div>
+                <div class="slide fade"><img src="images/work2.jpg" alt="Slide 2"></div>
+                <div class="slide fade"><img src="images/work.jpg" alt="Slide 3"></div>
+            </div>
+        
+            <script>
+                let slideIndex = 0;
+                function showSlides() {
+                    let slides = document.querySelectorAll(".slide");
+                    slides.forEach(slide => slide.style.display = "none"); // Hide all slides
+                    slideIndex++;
+                    if (slideIndex > slides.length) { slideIndex = 1; }
+                    slides[slideIndex - 1].style.display = "block"; // Show current slide
+                    setTimeout(showSlides, 3000); // Change image every 3 seconds
+                }
+                showSlides();
+            </script>
+    
+<!--  swipper end-->
+        </div>
         <div class="banner1">Elvie</div>
         <div class="banner2">Austin</div>
         <div class="banner3">Gia</div>
