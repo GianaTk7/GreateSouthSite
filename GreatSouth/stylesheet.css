@@ -190,7 +190,7 @@ hr{
     width: 100%;
     height: 140vh;
     border: 2px solid burlywood;
-    margin-top: 400px;
+    margin-top: 8px;
 }
 
 .banner4{
@@ -203,7 +203,64 @@ hr{
     width: 100%;
     height: 120vh;
     border: 2px solid purple;
+    background-color: #070707;
 }
+
+.shop {
+    font-size: 28px;
+    font-weight: 600;
+    margin: auto 520px;
+    color: white;
+}
+
+.container4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 33px;
+    margin-top: 60px;
+}
+.product-card {
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+}
+.product-card img {
+    width: 100px;
+    height: auto;
+}
+.product-card .label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: blue;
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+.product-card img {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 
 .banner6{
     width: 100%;
@@ -219,6 +276,51 @@ hr{
 
 .banner8{
     width: 100%;
-    height: 110vh;
+    height: 40vh;
     border: 2px solid orchid;
+    background-color: #070707;
+}
+
+footer {
+    background-color: #070707;
+    color: white;
+    padding: 40px 20px;
+}
+.container5 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 100px auto;
+}
+.footer-section {
+    width: 23%;
+    margin-bottom: 20px;
+}
+.footer-section h4 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-section ul li {
+    margin: 10px 0;
+}
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+}
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-logo{
+    height: 200px;
+    width: 200px;
+    margin-left: 560px;
 }
