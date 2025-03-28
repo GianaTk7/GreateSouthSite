@@ -1,77 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./stylesheet.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheet.css" />
     <title>GreateSouthSite</title>
-    <link rel="stylesheet" href="stylesheet.css">
-</head>
-<body>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
     <div class="main">
-        <div class="home">
+      <div class="home">
+        <div class="navbar">
             <nav>
                 <div class="navbar-div">
-                    <div class="logo__div">
-                        <img src="./images/logo.png" style="width: 160px; margin-left: 4px" alt="logo">
-                    </div>
-                    <div class="context__div">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-    
-           <!-- home swiper -->
+                  <div class="logo__div">
+                    <img
+                      src="./images/logo.png"
+                      style="width: 160px; margin-left: 4px"
+                      alt="logo"
+                    />
+                  </div> 
+                   <div class="context__div">
+                    <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">Contact</a></li>
+                    </ul>
+                  </div> 
+                 </div>
+                 <hr class="navbar-hr" />
+              </nav>  
+           </div>
+        <div class="overlay">
+            <!-- Content for the transparent div -->
         </div>
+        <swiper-container class="mySwiper" navigation="true">
+          <swiper-slide>
+            <div class="contact-info">
+                <!-- Your contact content here -->
+                <h1>Contact Us: 123-456-7890</h1>
+                <p>Email: example@example.com</p>
+              </div>
+            <img src="images/work.jpg" alt="work" />
+          </swiper-slide>
 
-        <div class="banner1">Elvie</div>
-        <div class="banner2">Austin</div>
+          <swiper-slide>
+            <img src="images/work2.jpg" alt="work" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="images/work3.jpg" alt="work" />
+          </swiper-slide>
+        </swiper-container>
 
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+      </div>
 
-        <div class="banner3">
-            <div class="middle_contact_banner">
-                <h1>Schedule Our Expert Visit Or Get A Quote</h1>
-                <div class="middle_contact_info">
+      <div class="banner1">Elvie</div>
+      <div class="banner2">Austin</div>
 
-                    <div class="middle_info">
-                        <!-- <h2>Schedule a Vist</h2> -->
-                        <h2>06806289</h2> 
-                        <img src="images/ico-phone-white.png" alt="ico-phone">
-                    </div>
-                    <div class="middle_info"></div>
-                    <div class="middle_info"></div>
-                </div>
-                
+      <div class="banner3">
+        <div class="middle_contact_banner">
+          <h1>Schedule Our Expert Visit Or Get A Quote</h1>
+          <div class="middle_contact_info">
+            <div class="middle_info">
+              <!-- <h2>Schedule a Vist</h2> -->
+              <h2>06806289</h2>
+              <img src="images/ico-phone-white.png" alt="ico-phone" />
             </div>
-
-           <div class="container">
-        <!-- Image Section -->
-        <div class="image-wrapper">
-            <img src="images/img-1.jpg"Car Inspection" class="background-image">
+            <div class="middle_info"></div>
+            <div class="middle_info"></div>
+          </div>
         </div>
 
-        <!-- Overlay Box -->
-        <div class="overlay-box">
-            <h2>Body Inspection</h2>
-            <p class="sub-title">Denting & Painting</p>
-            <p>
-                Dolore magna aliqua umt enim veniam quis ulamco aliquip commodo consequat 
-                duis aut derit voluptate cillum dolore afugiat.
-            </p>
-            <button class="view-details">VIEW DETAILS</button>
-        </div>
+        <div class="container">
+            <!-- Image Section -->
+            <div class="image-wrapper">
+              <img src="images/img-1.jpg" alt="Car Inspection" class="background-image">
+            </div>
+          
+            <!-- Overlay Box -->
+            <div class="overlay-box">
+              <h2>Body Inspection</h2>
+              <p class="sub-title">Denting & Painting</p>
+              <p>
+                Dolore magna aliqua umt enim veniam quis ulamco aliquip commodo
+                consequat duis aut derit voluptate cillum dolore afugiat.
+              </p>
+              <button class="view-details">VIEW DETAILS</button>
+            </div>
+          </div>
+      </div>
+      <div class="banner4">Elvie</div>
+      <div class="banner5">Austin</div>
+      <div class="banner6">Gia</div>
+      <div class="banner7">Elvie</div>
+      <div class="banner8">Austin</div>
     </div>
-        </div>
-        <div class="banner4">Elvie</div>
-        <div class="banner5">Austin</div>
-        <div class="banner6">Gia</div>
-        <div class="banner7">Elvie</div>
-        <div class="banner8">Austin</div>
-    </div>
-</body>
+  </body>
 </html>

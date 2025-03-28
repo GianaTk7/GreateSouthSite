@@ -7,28 +7,106 @@
 .main {
   width: 100%;
   height: 100vh;
-  border: 2px solid black;
+  /* border: 2px solid red; */
 }
+
 
 .home {
   width: 100%;
   height: 99vh;
-  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.20);
+
 }
+
+.navbar {
+  width: 100%;
+  height: 130px;
+  position: absolute;  
+  top: 0;
+  left: 0;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  z-index: 2; 
+}
+
+.overlay {
+  width: 100%;
+  height: 300px; 
+  background: rgba(0, 0, 0, 0.15); 
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.mySwiper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contact-info {
+  width: 60%;
+  height: 430px;
+  /* border: 2px solid red; */
+  position: absolute; 
+  top: 35%; 
+  left: 50%; 
+  transform: translateX(-50%);
+  color: white;
+  /* background-color: rgba(0, 0, 0, 0.5);  */
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px; 
+  z-index: 2; 
+}
+.contact-info h1{
+  font-size: 22px;
+  font-weight: 400;
+}
+.contact-info p{
+  padding-top: 20px;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+
+
 
 .navbar-div {
   width: 100%;
   height: 110px;
-  border: 2px solid green;
+  border: 2px dotted white;
   display: flex;
   align-items: center;
-  background: rgb(9, 22, 37);
+  position: relative;
+ 
 }
 
 .logo__div {
   width: 20%;
   height: 100px;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,7 +115,7 @@
 .context__div {
   width: 80%;
   height: 100px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,110 +129,24 @@ ul {
 
 ul li a {
   text-decoration: none;
-  color: rgb(176, 171, 192);
-  font-size: 20px;
-  font-weight: 700;
-}
-.swiper_slide img {
-  width: 100%;
-  height: 80vh;
-  object-fit: cover;
-}
-/* Slider Container */
-.slider-container {
-  position: relative;
-  width: 100%;
-  max-width: 800px;
-  margin: auto;
-  text-align: center;
-}
-
-/* Text on Top of the Slider */
-.slider-text {
-  font-size: 24px;
-  font-weight: bold;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-}
-
-/* Image Slider Styles */
-.slider {
-  position: relative;
-  width: 100%;
-  height: 500px;
-  overflow: hidden;
-}
-
-.slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-.fade {
-  opacity: 1;
-}
-
-/* Styling for the images */
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Navigation Arrows */
-.prev,
-.next {
-  position: absolute;
-  top: 50%;
-  padding: 16px;
-  background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  font-size: 24px;
-  cursor: pointer;
-  user-select: none;
-  border: none;
-  transform: translateY(-50%);
-  z-index: 10;
+  font-size: 2rem;
+  font-weight: 900;
+}
+ul li a:hover {
+  color: white;
+  font-size: 30px;
+  transition: all 0.3s ease-in-out;
+}
+.navbar-hr{
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  margin-top: 5px;
 }
 
-.prev {
-  left: 10px;
-}
 
-.next {
-  right: 10px;
-}
 
-/* Slide Show Animation */
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.slide {
-  animation: fade 0.8s infinite;
-}
 
 .banner1 {
   width: 100%;
@@ -218,70 +210,86 @@ img {
 }
 
 /* Container */
+/* Container for the entire section */
 .container {
-  width: 100%;
-  height: 500px; 
-  border: 2px solid red;
-  background: black;
   position: relative;
-  margin: auto;
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
-/* Image Wrapper */
+/* Image Section */
 .image-wrapper {
-
-  width: 70%;
-  height: 500px;
-  border: 2px solid blue;
-  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .background-image {
   width: 100%;
-  display: block;
-  border-radius: 10px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.6; /* Optional: adjust image opacity */
 }
 
 /* Overlay Box */
 .overlay-box {
   position: absolute;
   top: 50%;
-  right: 10%;
-  width: 300px; /* Adjust size */
-  background: white;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   padding: 20px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  transform: translateY(-50%);
+  max-width: 80%;
+  box-sizing: border-box;
 }
 
-/* Text Styles */
-h2 {
-  font-size: 22px;
-  margin-bottom: 5px;
-}
-
-.sub-title {
-  color: #0056b3;
+/* Title */
+.overlay-box h2 {
+  font-size: 2rem;
+  margin: 0;
   font-weight: bold;
-  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.overlay-box .sub-title {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+
+/* Paragraph text */
+.overlay-box p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 /* Button */
 .view-details {
-  background: white;
-  border: 2px solid #0056b3;
-  color: #0056b3;
-  padding: 10px 15px;
-  cursor: pointer;
+  background-color: #ff6600; /* Custom color */
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
   border-radius: 5px;
-  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .view-details:hover {
-  background: #0056b3;
-  color: white;
+  background-color: #e55b00; /* Darker shade for hover effect */
 }
+
+
 
 
 
