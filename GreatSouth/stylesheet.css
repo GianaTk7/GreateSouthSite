@@ -8,31 +8,33 @@
 .main{
     width: 100%;
     height: 100%;
-    /* border: 2px solid black; */
+
 }
 
 .home{
     width: 100%;
     height: 99vh;
-    border: 2px solid red;
+
 }
 
 .banner1{
     width: 100%;
     height: 140vh;
-    border: 2px solid blue;
+
 }
 
 .banner2{
     width: 100%;
-    height: 170vh;
-    border: 2px solid blueviolet;
-    background-color: #070707;
+    height: 120vh;
+    background-color: #013e64;
     margin-bottom: 270px;
 }
 
+.section-title h1{
+    color: hsl(0, 0%, 100%);
+}
+
 .section-title{
-    color: white;
     font-size: 30px;
     font-weight: 200;
     margin-top: 30px;
@@ -118,14 +120,14 @@ i:hover{
 .label {
     font-weight: 600;
     font-size: 16px;
-    color: #979797;
+    color: #fff;
     margin-bottom: 2px;
 }
 
 .info-text {
     margin: 0;
     font-size: 14px;
-    color: #555;
+    color: #fff;
 }
 
 .divider {
@@ -135,8 +137,9 @@ i:hover{
 }
 
 .schedule-section{
+    background-color: #fd6b1c;
     width: 100%;
-    height: 50vh;
+    height: 42vh;
 }
 
 .schedule{
@@ -183,27 +186,25 @@ hr{
     width: 70%;
     margin: 30px auto;
     height: 1px;
-    color:  rgb(97, 161, 235);
+    color:  #ffffff;
 }
 
 .banner3{
     width: 100%;
     height: 140vh;
-    border: 2px solid burlywood;
     margin-top: 8px;
 }
 
 .banner4{
     width: 100%;
     height: 110vh;
-    border: 2px solid orange;
+
 }
 
 .banner5{
     width: 100%;
     height: 120vh;
-    border: 2px solid purple;
-    background-color: #070707;
+    background-color: #013e64;
 }
 
 .shop {
@@ -264,18 +265,28 @@ h1{
 
 .banner6{
     width: 100%;
-    height: 150vh;
-    border: 2px solid plum;
-    background-color: #070707;
+    height: 146vh;
+    background-color: #fd6b1c;
 }
 
 
+
+#line{
+    margin-top: 50px;
+}
+
+#line2{
+    margin-top: 80px;
+}
+
+#heade{
+    padding-top: 25px;
+}
+
 .read-our-facts{
     width: 50%;
-    height: 100%;;
+    height: 100%;
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -286,17 +297,16 @@ h1{
 .banner7{
     width: 100%;
     height: 160vh;
-    border: 2px solid orangered;
 }
 
 .banner8{
     width: 100%;
     height: 40vh;
-    background-color: #070707;
+    background-color: #013e64;
 }
 
 footer {
-    background-color: #070707;
+    background-color: #013e64;
     color: white;
     padding: 40px 20px;
 }
@@ -338,6 +348,10 @@ footer {
     width: 200px;
     margin-left: 560px;
 }
+
+.label-color{
+    color: #ffffff;
+}
 .contact{
     margin-top: 200px;
     width: 50%;
@@ -348,12 +362,12 @@ footer {
 .contact-form h1 {
     font-size: 26px;
     margin-bottom: 10px;
-    color: #333;
+    color: #fff;
 }
 
 .contact-form p {
     font-size: 14px;
-    color: #666;
+    color: #fff;
     margin-bottom: 20px;
     margin-left: 15%;
 
@@ -363,7 +377,6 @@ footer {
     display: block;
     font-weight: bold;
     margin: 10px 0 5px;
-    color: #444;
     margin-left: 15%;
 
 }
@@ -371,17 +384,15 @@ footer {
 .contact-form input {
     width: 70%;
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
     margin-left: 15%;
     font-size: 14px;
     transition: border 0.3s ease-in-out;
 }
 
-.contact-form input:focus {
+/* .contact-form input:focus {
     border-color: #007bff;
     outline: none;
-}
+} */
 
 .contact-form button {
     width: 70%;
@@ -405,7 +416,7 @@ footer {
 
 .facts h1 {
     font-size: 26px;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 20px;
 }
 
