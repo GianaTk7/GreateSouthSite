@@ -1,65 +1,325 @@
-*{
-    padding: 0;
-    margin: 0;
-     box-sizing: border-box;
-
-}
-.main{
-    width: 100%;
-    height: 100%;
-    border: 2px solid black;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.home{
-    width: 100%;
-    height: 99vh;
-    border: 2px solid red;
+.main {
+  width: 100%;
+  height: 100vh;
+  /* border: 2px solid red; */
 }
 
-.banner1{
-    width: 100%;
-    height: 140vh;
-    border: 2px solid blue;
+
+.home {
+  width: 100%;
+  height: 99vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.20);
+
 }
 
-.banner2{
-    width: 100%;
-    height: 200vh;
-    border: 2px solid blueviolet;
+.navbar {
+  width: 100%;
+  height: 130px;
+  position: absolute;  
+  top: 0;
+  left: 0;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  z-index: 2; 
 }
 
-.banner3{
-    width: 100%;
-    height: 140vh;
-    border: 2px solid burlywood;
+.overlay {
+  width: 100%;
+  height: 300px; 
+  background: rgba(0, 0, 0, 0.15); 
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
-.banner4{
-    width: 100%;
-    height: 110vh;
-    border: 2px solid orange;
+swiper-container {
+  width: 100%;
+  height: 100%;
 }
 
-.banner5{
-    width: 100%;
-    height: 120vh;
-    border: 2px solid purple;
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-.banner6{
-    width: 100%;
-    height: 150vh;
-    border: 2px solid plum;
+.mySwiper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contact-info {
+  width: 60%;
+  height: 430px;
+  /* border: 2px solid red; */
+  position: absolute; 
+  top: 35%; 
+  left: 50%; 
+  transform: translateX(-50%);
+  color: white;
+  /* background-color: rgba(0, 0, 0, 0.5);  */
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px; 
+  z-index: 2; 
+}
+.contact-info h1{
+  font-size: 22px;
+  font-weight: 400;
+}
+.contact-info p{
+  padding-top: 20px;
+  font-size: 3rem;
+  font-weight: 700;
 }
 
-.banner7{
-    width: 100%;
-    height: 160vh;
-    border: 2px solid orangered;
+
+
+
+.navbar-div {
+  width: 100%;
+  height: 110px;
+  border: 2px dotted white;
+  display: flex;
+  align-items: center;
+  position: relative;
+ 
 }
 
-.banner8{
-    width: 100%;
-    height: 110vh;
-    border: 2px solid orchid;
+.logo__div {
+  width: 20%;
+  height: 100px;
+  /* border: 2px solid blue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.context__div {
+  width: 80%;
+  height: 100px;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  font-weight: 900;
+}
+ul li a:hover {
+  color: white;
+  font-size: 30px;
+  transition: all 0.3s ease-in-out;
+}
+.navbar-hr{
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  margin-top: 5px;
+}
+
+
+
+
+.banner1 {
+  width: 100%;
+  height: 140vh;
+  border: 2px solid blue;
+}
+
+.banner2 {
+  width: 100%;
+  height: 200vh;
+  border: 2px solid blueviolet;
+}
+
+.banner3 {
+  width: 100%;
+  height: 140vh;
+  border: 2px solid burlywood;
+ 
+}
+.middle_contact_banner {
+  width: 100%;
+  height: 280px;
+  border: 4px solid blue;
+  /* display: flex; */
+  background-color: black;
+}
+.middle_contact_banner h1 {
+  color: white;
+  font-size: 24px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.middle_contact_info {
+  width: 65%;
+  height: 120px;
+  border: 1px solid black;
+  display: flex;
+  margin: auto;
+}
+.middle_info {
+  width: 340px;
+  height: 100px;
+  border: 2px solid red;
+  margin-top: 25px;
+  display: flex;
+}
+.middle_info h2 {
+  color: white;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-left: 30px;
+}
+.middle_info img {
+  width: 100px;
+  height: 50px;
+  padding-left: 80px;
+  padding-top: 30px;
+  background-color: black;
+}
+
+/* Container */
+/* Container for the entire section */
+.container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Image Section */
+.image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.6; /* Optional: adjust image opacity */
+}
+
+/* Overlay Box */
+.overlay-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 80%;
+  box-sizing: border-box;
+}
+
+/* Title */
+.overlay-box h2 {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Subtitle */
+.overlay-box .sub-title {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+
+/* Paragraph text */
+.overlay-box p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Button */
+.view-details {
+  background-color: #ff6600; /* Custom color */
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-details:hover {
+  background-color: #e55b00; /* Darker shade for hover effect */
+}
+
+
+
+
+
+
+.banner4 {
+  width: 100%;
+  height: 110vh;
+  border: 2px solid orange;
+}
+
+.banner5 {
+  width: 100%;
+  height: 120vh;
+  border: 2px solid purple;
+}
+
+.banner6 {
+  width: 100%;
+  height: 150vh;
+  border: 2px solid plum;
+}
+
+.banner7 {
+  width: 100%;
+  height: 160vh;
+  border: 2px solid orangered;
+}
+
+.banner8 {
+  width: 100%;
+  height: 110vh;
+  border: 2px solid orchid;
 }
